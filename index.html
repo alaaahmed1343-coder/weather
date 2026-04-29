@@ -1,0 +1,208 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+ 
+  <body>
+    <!-- start header -->
+    <div class="site-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="branding d-flex">
+          <img src="img/logo.png" alt="" class="logo" />
+          <div class="logo-type px-4">
+            <h1 class="site-title">Weather</h1>
+            <small class="site-description">tagline goes here</small>
+          </div>
+        </a>
+ 
+        <!-- Default snippet for navigation -->
+        <div class="main-navigation">
+          <ul class="menu d-flex">
+            <li class="menu-item current-menu-item px-3">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="menu-item px-3"><a href="#">News</a></li>
+            <li class="menu-item"><a href="#">Live cameras</a></li>
+            <li class="menu-item"><a href="#">Photos</a></li>
+            <li class="menu-item"><a href="#">Contact</a></li>
+          </ul>
+          <!-- .menu -->
+        </div>
+        <!-- .main-navigation -->
+      </div>
+    </div>
+    <!-- end header -->
+ 
+    <!-- site header hero -->
+    <div class="hero">
+      <div class="container">
+        <form class="find-location">
+          <input type="text" placeholder="Find your location..." id="search" />
+          <input type="button" value="Find" id="submit" />
+        </form>
+      </div>
+    </div>
+    <!-- end site header -->
+ 
+    <!-- start forcaste table -->
+    <div class="forecast-table">
+      <div class="container">
+        <div class="forecast-container d-flex">
+          <div class="row w-100 p-0" id="forecast">
+            <div class="today forecast px-3 col-lg-4">
+              <div
+                class="forecast-header d-flex justify-content-between"
+                id="today"
+              >
+                <p id="today-date-day-name" class="day">Thursday</p>
+ 
+                <span>
+                  <span id="today-date-day-num" class="date">16</span>
+                  <span id="today-date-month" class="date">September</span>
+                </span>
+              </div>
+ 
+              <div class="forecast-content" id="current">
+                <div id="today-location" class="location">Cairo</div>
+                <div class="degree d-flex">
+                  <span>
+                    <span id="today-temp">31</span>
+                    <span class="fs-1 fw-bolder"><sup>o</sup>C</span>
+                  </span>
+ 
+                  <div class="forecast-icon">
+                    <img
+                      id="today-condition-img"
+                      src="img/image (2).png"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div>
+                </div>
+                <p id="today-condition-text" class="custom">Partly cloudy</p>
+ 
+                <div class="item-footer d-flex text-light p-3">
+                  <div class="d-flex me-auto">
+                    <img class="px-1" src="img/image (2).png" alt="" />
+                    <p id="humidity">20</p>
+                  </div>
+                  <div class="d-flex me-auto">
+                    <img class="px-1" src="img/image (1).png" alt="" />
+                    <p id="wind">20</p>
+                  </div>
+                  <div class="d-flex me-auto">
+                    <img class="px-1" src="img/image.png" alt="" />
+                    <p id="wind-direction">e</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="forecast text-center px-3  col-lg-4">
+              <div class="forecast-header">
+                <div class="day next-day-name"></div>
+              </div>
+ 
+              <div class="forecast-content">
+                <div class="forecast-icon py-1">
+                  <img
+                    src="img/116.png"
+                    class="next-condition-img"
+                    alt=""
+                    width="48"
+                  />
+                </div>
+                <h3>
+                  <span class="next-max-temp degree"></span>
+                  <span class="degree py-1"><sup>o</sup>C</span>
+                </h3>
+ 
+                <h3>
+                  <span class="next-min-temp degree"></span>
+                  <span class="degree py-1"><sup>o</sup>C</span>
+                </h3>
+                <p class="next-condition-text custom py-1"></p>
+              </div>
+            </div>
+            <div class="forecast text-center px-3  col-lg-4">
+              <div class="forecast-header">
+                <div class="day next-day-name">Friday</div>
+              </div>
+ 
+              <div class="forecast-content">
+                <div class="forecast-icon py-1">
+                  <img
+                    src="img/116.png"
+                    class="next-condition-img"
+                    alt=""
+                    width="48"
+                  />
+                </div>
+                <h3>
+                  <span class="next-max-temp degree"></span>
+                  <span class="degree py-1"><sup>o</sup>C</span>
+                </h3>
+ 
+                <h3>
+                  <span class="next-min-temp degree"></span>
+                  <span class="degree py-1"><sup>o</sup>C</span>
+                </h3>
+                <p class="next-condition-text custom py-1">Partly cloudy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end forcaste table -->
+ 
+    <!-- start footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form position-relative">
+              <input
+                type="text"
+                placeholder="Enter your email to subscribe..."
+              />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+          <div class="col-md-4 px-5">
+            <div class="social-links d-flex">
+              <a
+                class="d-flex justify-content-center align-items-center"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="d-flex justify-content-center align-items-center"
+                href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="d-flex justify-content-center align-items-center"
+                href="#"
+                ><i class="fab fa-google-plus"></i
+              ></a>
+              <a
+                class="d-flex justify-content-center align-items-center"
+                href="#"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+ 
+        <p class="colophon">
+          Copyright 2014 Company name. Designed by Alaa. All rights reserved
+        </p>
+      </div>
+    </footer>
+ 
+    <script src="js/main.js"></script>
+  </body>
+</html>

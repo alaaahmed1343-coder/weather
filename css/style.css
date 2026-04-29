@@ -1,0 +1,186 @@
+a
+{
+    text-decoration: none;
+}
+ul li
+{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+body {
+    color: rgb(191, 193, 200);
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: rgb(30, 32, 43);
+}
+/* header */
+.site-header {
+    padding: 50px 0px;
+}
+.site-header .branding .site-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-size: 1.1428571429em;
+    color: white;
+}
+.site-header .branding .site-description {
+    font-size: 10px;
+    font-size: 0.7142857143em;
+    color: #bfc1c8;
+}
+ 
+.main-navigation .menu .menu-item a {
+    color: white ;
+    font-weight: 400;
+    padding: 5px 25px !important;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+.main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a {
+    color: rgb(0, 154, 216);
+    border-color: rgb(0, 154, 216);
+}
+ 
+/* hero */
+.hero{
+    background-image: url(../img/image\ \(1\).jpg) !important ;
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+.find-location {
+    position: relative;
+    margin-bottom: 70px;
+}
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.find-location input[type="submit"], .find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px !important;
+   
+}
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 0px 20px !important;
+    border-radius: 30px;
+    color: white;
+}
+.container:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+ 
+/* table focast */
+.forecast-container {
+    width: 100%;
+    background: #323544;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+   
+}
+.forecast
+{
+    padding: 0 !important;
+}
+.row
+{
+    margin-left: 0 !important;
+}
+.forecast .forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+}
+ 
+.forecast-container .forecast.today .forecast-header:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+ 
+.forecast-container .forecast.today .forecast-content {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.forecast-container .forecast.today .location {
+    font-size: 18px;
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+.forecast-container .forecast .forecast-content .degree {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.forecast-container .forecast.today .degree #today-temp {
+    font-size: 50px;
+    /* font-size: 6.4285714286rem; */
+    /* margin-right: 30px; */
+}
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+ 
+.forecast.today .degree .forecast-icon  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle !important;
+}
+.forecast-container .forecast .forecast-content {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+.forecast-container .forecast:nth-child(even) {
+    background-color: #262936;
+}
+ 
